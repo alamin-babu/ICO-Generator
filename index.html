@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICO Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ICO Generator</h1>
+        <button class="theme-toggle" id="themeToggle" >
+            <img src="media/moon.png" title="change theme" alt="Light Mode" id="themeIcon" style="width: 24px; height: 24px;">
+        </button>
+        <div id="userInstructions">
+            <strong>User Instructions:</strong>
+            <p>Drag and drop an image or click to select one. Choose icon sizes and formats, then click "Download" to get individual icons or "Download All Icons" for a zip file.</p>
+        </div>
+        <div id="dropZone">
+            <p>Drag and drop an image here or click to select</p>
+            <input type="file" id="fileInput" accept="image/*" style="display: none;">
+        </div>
+        <label for="formatSelect">Select Icon Format:</label>
+        <select id="formatSelect" style="width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #ced4da;">
+            <option value="ico">ICO</option>
+            <option value="png">PNG</option>
+            <option value="svg">SVG</option>
+        </select>
+        <div id="preview"></div>
+        <button id="downloadAllBtn">Download All Icons</button>
+    </div>
+
+    <footer>
+        <!-- <div class="footer-links">
+            <a href="#about">About Us</a> | 
+            <a href="#contact">Contact</a> | 
+            <a href="#privacy">Privacy Policy</a>
+        </div> -->
+        <!-- <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">
+                <img src="" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="" alt="Instagram">
+            </a>
+        </div> -->
+        <div class="footer-links">
+            Made with <span style="color: #e25555;">❤</span> by<a  href="https://github.com/alamin-babu"><strong>Al-Amin</strong> </a>
+
+        </div>
+        
+
+    </footer>
+
+    <script src="script.js"></script>
+       
+</body>
+</html>

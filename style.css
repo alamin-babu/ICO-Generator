@@ -1,0 +1,177 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#dropZone {
+    border: 2px dashed #007bff;
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+#dropZone:hover {
+    background-color: #e9ecef;
+    border-color: #0056b3;
+}
+#preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.preview-item {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.preview-item canvas {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+}
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+#downloadAllBtn {
+    background-color: #28a745;
+    display: none;
+    margin: 20px auto;
+}
+.download-btn {
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.download-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+#userInstructions {
+    margin: 20px 0;
+    font-size: 14px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #777;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.footer-links {
+    margin: 10px 0;
+}
+.footer-links a {
+    margin: 0 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.social-icons {
+    margin-top: 5px;
+}
+.social-icons img {
+    width: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.theme-toggle {
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid rgb(195, 186, 186);
+    background: none;
+    transition: transform 0.2s;
+}
+.theme-toggle:hover {
+    transform: scale(1.05);
+}
+/* Dark mode styles */
+[data-theme="dark"] {
+    background-color: #181818;
+    color: #e0e0e0;
+}
+[data-theme="dark"] .container {
+    background-color: #242424;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+[data-theme="dark"] h1 {
+    color: #66b3ff;
+}
+[data-theme="dark"] #dropZone {
+    border-color: #007bff;
+}
+[data-theme="dark"] #dropZone:hover {
+    background-color: #333333;
+    border-color: #66b3ff;
+}
+[data-theme="dark"] .preview-item {
+    background-color: #3a3a3a;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+[data-theme="dark"] .preview-item canvas {
+    border: 1px solid #555;
+}
+[data-theme="dark"] #userInstructions {
+    background-color: #333;
+    border: 1px solid #444;
+}
+[data-theme="dark"] footer {
+    background-color: #2a2a2a;
+    color: #ccc;
+}
+img.theme-image {
+    display: block;
+    margin: 0 auto;
+    transition: filter 0.3s;
+}
